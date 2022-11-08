@@ -54,9 +54,9 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
-    <dl>
-      <dt>Lorem.</dt>
-      <dd>Lorem ipsum dolor sit amet.</dd>
+    <dl x-data="{loremisopen: false}">
+      <dt @click="loremisopen = ! loremisopen">Lorem.</dt>
+      <dd x-show="loremisopen">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
       <dt>Consectetur.</dt>
