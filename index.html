@@ -58,13 +58,13 @@
       <dt @click="loremisopen = ! loremisopen">Lorem.</dt>
       <dd x-show="loremisopen">Lorem ipsum dolor sit amet.</dd>
     </dl>
-    <dl>
-      <dt>Consectetur.</dt>
-      <dd>Recusandae libero porro ab exercitationem.</dd>
+    <dl x-data="{conisopen: false}">
+      <dt @click="conisopen = ! conisopen">Consectetur.</dt>
+      <dd x-show="conisopen">Recusandae libero porro ab exercitationem.</dd>
     </dl>
-    <dl>
-      <dt>Ea?</dt>
-      <dd>Nihil eligendi quisquam numquam neque?</dd>
+    <dl x-data="{eaisopen:false}">
+      <dt @click="eaisopen = ! eaisopen">Ea?</dt>
+      <dd x-show="eaisopen">Nihil eligendi quisquam numquam neque?</dd>
     </dl>
   </body>
 </html>
